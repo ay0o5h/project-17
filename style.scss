@@ -1,0 +1,463 @@
+$maincolor :#38BFF9;
+$secondcolor:#F1FF51;
+$thirdcolor:blanchedalmond;
+$mainfont:Georgia, 'Times New Roman', Times, serif;
+$secondfont:'PT Sans Narrow', sans-serif;
+.h1 {
+    font-family: $secondfont;
+    color:$maincolor;
+    font-weight: bolder;
+    text-transform: uppercase;
+     font-size:50px;
+}
+.h2 {
+    font-family:$mainfont;
+     text-transform: capitalize;
+     color:black;
+     margin-top:3%;
+}
+.p {
+    font-family:$mainfont;
+    text-transform: capitalize;
+    color:#939393 ;
+    margin-top:3%;
+}
+.bttn {
+    background-color: $secondcolor;
+    color:black;
+    text-transform: uppercase;
+    font-family: $mainfont;
+    border:unset;
+    font-size: 30px;
+    padding:3%;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+// start main 
+.main {
+    background-color: $maincolor;
+    justify-content: center;
+    text-align: center;
+    padding:3%;
+    h3 {
+        font-family:$mainfont;
+        color:$thirdcolor;
+    }
+    h1 {
+        font-family: $mainfont;
+        color:$secondcolor;
+        font-weight: bolder;
+        margin-top: 5%;
+        font-size: 50px;
+    }
+    h2{
+        font-family: $mainfont;
+        color:$thirdcolor; 
+        margin-top: 3%;
+        margin-bottom:5%;
+        text-transform: capitalize;
+    }
+    .form-control {
+        padding:7%;
+            display: inline-block;
+            padding-right: 50px;
+    }
+    input::placeholder {
+        font-family: $mainfont;   
+    }
+    i {
+        position: relative;
+        bottom: 35px;
+        right: -42%;
+        color: #38BFF9;
+    }
+    .err{
+        border:1px solid red;
+    }
+    span {
+        font-family: $mainfont;
+        color:red;
+        font-size:10px;
+        position: relative;
+        top: 15px;
+        left: 5px;
+        display:none
+    }
+    .btn {
+        @extend .bttn;
+    }
+}
+// end main
+// start sidebar
+.sidebar {
+    margin-top:10%;
+#wrapper {
+  overflow-x: hidden;
+}
+#sidebar-wrapper {
+min-height: 100vh;
+margin-left: -20rem;
+-webkit-transition: margin .25s ease-out;
+-moz-transition: margin .25s ease-out;
+-o-transition: margin .25s ease-out;
+transition: margin .25s ease-out;
+}
+#sidebar-wrapper .list-group {
+width: 20rem;
+}
+#page-content-wrapper {
+min-width: 100vw;
+}
+#wrapper.toggled #sidebar-wrapper {
+margin-left: 0;
+}
+.fa-sliders {
+    color:$maincolor;
+    cursor: pointer;
+    display:none;
+    border:1px solid $maincolor;
+    border-radius: 5px;
+    padding:1%;
+}
+.fa-arrow-up {
+    background-color:$maincolor;
+    color: $thirdcolor;
+    border-radius: 50%;
+    padding:1%;
+    position: fixed;
+    bottom:0;
+    right:0;
+    cursor: pointer;
+    z-index:3;
+    display:none;
+}
+@media (min-width: 768px) {
+#sidebar-wrapper {
+  margin-left: 0;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+  padding-left: 8.5%;
+  padding-right: 8.5%;
+}
+
+#wrapper.toggled #sidebar-wrapper{
+  margin-left: -20rem;
+}
+}
+.list-group-item-action {
+    width: 100%;
+     color:#939393; 
+    text-align: center;
+    font-family: $secondfont;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size:30px;
+    background-color:white;
+}
+.list-group-item {
+    border:none;
+}
+ .active {
+     border-right:5px solid $maincolor;
+ }
+//  start about
+ .about{
+     padding-bottom: 5%;
+ h1 {
+    @extend .h1 ;
+ }
+ h2 {
+    @extend .h2 ;
+ }
+ p {
+    @extend .p ;
+ }
+}
+// end about
+// start servies
+.servies {
+    padding-bottom: 5%;
+   padding-top: 5%;
+    h1 {
+       @extend .h1 ;
+    }
+    h2,h3 {
+       @extend .h2 ;
+    }
+    p {
+       @extend .p ;
+    }
+    span {
+        display:inline-flex;
+        padding:5%;
+    }
+    i {
+        background-color: $secondcolor;
+        color:$maincolor;
+        padding: 5%;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+}
+// end servies
+// start programes
+ .programes {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    h1 {
+        @extend .h1 ;
+     }
+     h2 {
+        @extend .h2 ;
+     }
+     h3 {
+         text-transform:capitalize;
+         font-family:$mainfont;
+         color:$maincolor;
+     }
+     p {
+        @extend .p ;
+        font-size:20px;
+     }
+     span {
+         display:inline-flex;
+         padding:2%;
+     }
+     i {
+         color:$maincolor;
+         margin-right: 10px;
+    }
+// end programes
+}
+// start gallary 
+.gallary {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    .card {
+        margin-top: 10px;
+        border:none;
+    }
+    .caption {
+        position: absolute;
+        top: 0;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: .5s ease;
+        cursor: pointer;
+        background-color:  rgba(200,200,200,0.5);;
+            &:hover  {
+             opacity: 0.7;
+            }
+            i {
+                color:$maincolor;
+                position: absolute;
+                top: 25%;
+                left: 45%;     
+       }
+    }
+    h1 {
+        @extend .h1 ;
+     }
+     h3 {
+         text-transform:capitalize;
+         font-family:$mainfont;
+         color:$maincolor;
+     }
+     p {
+        @extend .p ;
+     }
+}
+// end gallary
+// start video 
+.video {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    h1 {
+        @extend .h1 ;
+     }
+     h2 {
+        @extend .h2 ;
+     }
+     p {
+        @extend .p ;
+     }
+}
+// end video
+// start prices
+.prices {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    h1 {
+        @extend .h1 ;
+     }
+     h2 {
+        @extend .h2 ;
+     }
+     p {
+        @extend .p ;
+     }
+     .price {
+         background-color: $maincolor;
+         padding:5%;
+         width:150px;
+         text-align: center;
+         border-radius: 50%;
+        h3 {
+            @extend .h1 ;
+            color:$secondcolor;
+         }
+         p {
+            @extend .p ;
+            color:$secondcolor;
+         }
+     }
+     span {
+        display:inline-flex;
+        padding:2%;
+    }
+    i {
+        color:$maincolor;
+        margin-right: 10px;
+   }
+     .btn {
+        @extend .bttn;
+    }
+}
+// end prices
+// start faqs
+.faqs {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    h1 {
+        @extend .h1 ;
+     }
+     h2 {
+        @extend .h2 ;
+        color:$maincolor;
+        cursor: pointer;
+     }
+     p {
+        @extend .p ;
+     }
+     span {
+        display:inline-flex;
+    }
+    i {
+        color:$maincolor;
+        margin-right: 10px;
+        border:1px solid $maincolor;
+        border-radius: 5px;
+        height:50px;
+    }
+       
+}
+// end faqs
+// start testimonials
+.testimonials {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    h1 {
+        @extend .h1 ;
+     }
+     h3 {
+        @extend .h2 ;
+        color:$maincolor;
+     }
+     p {
+        @extend .p ;
+     }
+}
+// end testimonials
+// start subscribes
+.subscribes {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    h1 {
+        @extend .h1 ;
+     }
+     h2 {
+        @extend .h2 ;
+     }
+     .btn {
+        @extend .bttn;
+        font-size: 20px;
+    padding:3.5%;
+     }
+     .form-control {
+         padding:4%;
+         border:1px solid black;
+         &::placeholder {
+             font-family: $mainfont;
+             text-transform: capitalize;
+             color:black
+         }
+     }
+}
+// end subscribes
+// start contact
+.contact {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    h1 {
+        @extend .h1 ;
+     }
+     h2 {
+        @extend .h2 ;
+        color:$maincolor;
+     }
+     p {
+        @extend .p ;
+     }
+    .btn {
+        @extend .bttn;
+        font-size: 20px;
+    padding:2%;
+     }
+     .fa-facebook, .fa-twitter , .fa-instagram {
+        background-color:$maincolor;
+        color: $thirdcolor;
+        border-radius: 50%;
+        padding:1%;
+        cursor: pointer;
+        &:hover {
+            background-color:$secondcolor;
+        color: black;
+        }
+     }
+     .fa-phone , .fa-location-arrow {
+        color:$maincolor;
+        margin-right: 5px;
+     }
+     span {
+        display:inline-flex;
+    }
+     .form-control {
+         padding:4%;
+         &::placeholder {
+             font-family: $mainfont;
+             text-transform: capitalize;
+         }
+     }
+}
+// end contact
+// start footer
+.footer {
+    padding-bottom: 3%;
+    padding-top: 3%;
+    p {
+        @extend .p ;
+     }
+}
+// end footer 
+}
+// end sidebar
