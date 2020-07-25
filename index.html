@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>sunnyside</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+</head>
+<body>
+    <!-- start main -->
+    <div class="main">
+            <h3> <img src="logo.png" height="70px" width="70px">SunnySide</h3>
+            <h1><b>BUSINESS CONSULTING</b></h1>
+            <h2>done right</h2>
+            <form>
+                <div class="form-group row ">
+                  <div class="col-sm-4"></div>
+                  <div class="col-sm-4">
+                  <span class=" pull-left">*name is requird</span>
+                    <input type="text" class="form-control  "  id="inputEmail3" placeholder="Name:">
+                    <i class="fa fa-user fa-2x "></i>
+                  </div>
+                <div class="col-sm-4"></div>
+                </div>
+                <div class="form-group  row">    
+                  <div class="col-sm-4"></div>       
+                  <div class="col-sm-4">
+                    <span class=" pull-left">*phone is requird</span>
+                      <input type="tel" class="form-control" id="inputEmail4" placeholder="Phone:">
+                      <i class="fa fa-phone fa-2x "></i>
+                    </div>         
+                    <div class="col-sm-4"></div>
+                  </div>
+                  <div class="form-group row ">                    
+                    <div class="col-sm-4"></div>              
+                    <div class="col-sm-4">
+                      <span class=" pull-left">*email is requird</span>
+                      <input type="email" class="form-control" id="inputEmail5" placeholder="Email:">
+                      <i class="fa fa-envelope fa-2x "></i>
+                    </div>           
+                    <div class="col-sm-4"></div>
+                  </div>               
+                <div class="form-group row ">
+                  <div class="col-sm-4"></div>               
+                  <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary btn-block">get quote</button>                    
+                  </div>               
+                <div class="col-sm-4"></div>
+                </div>
+              </form>
+    </div>
+    <!-- end main -->
+    <!-- start sidebar -->
+    <div class="sidebar">
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class=" border-right" id="sidebar-wrapper">
+        <ul class="list-group list-group-flush">
+         <li><a href="#about" data-scroll="about" class="list-group-item active list-group-item-action ">about</a></li> 
+          <li><a href="#servies" data-scroll="servies" class="list-group-item list-group-item-action ">our servies</a></li>
+          <li><a href="#programes" data-scroll="programes" class="list-group-item list-group-item-action ">our programes</a></li>
+          <li><a href="#gallary" data-scroll="gallary" class="list-group-item list-group-item-action ">gallary</a></li>
+          <li><a href="#video" data-scroll="video" class="list-group-item list-group-item-action ">video </a></li>
+          <li><a href="#prices" data-scroll="prices" class="list-group-item list-group-item-action ">prices</a></li>
+          <li><a href="#faqs" data-scroll="faqs" class="list-group-item list-group-item-action ">faqs</a></li>
+          <li><a href="#testimonials" data-scroll="testimonials" class="list-group-item list-group-item-action ">testimonials</a></li>
+          <li><a href="#subscribes" data-scroll="subscribes" class="list-group-item list-group-item-action ">subscribe </a></li>
+          <li><a href="#contact" data-scroll="contact" class="list-group-item list-group-item-action ">contacts</a></li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <i class="fa fa-sliders fa-2x" id="menu-toggle"></i>
+  <i class="fa fa-arrow-up fa-3x" onclick="up()"></i>
+        <div class="container-fluid">
+          <!-- start about -->
+          <div class="about b" id="about">
+            <h1>about</h1>
+            <h2>SunnySide is an award-winning business consulting firm helping all kinds of businesses</h2>
+            <p>Our Business Company provides partners with the resources they need to be successful in today’s global economy. The team of qualified staff was especially trained to
+               value the needs and preferences of each customer. Clients’ satisfaction is of the highest priority.</p>
+          <hr>
+              </div>
+          <!-- end about -->
+          <!-- start servies -->
+          <div class="servies b" id="servies">
+            <h1>OUR SERVICES</h1>
+            <h2>Ensuring the highest level of
+              customer satisfaction.</h2>
+            <p>
+              Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don’t have to worry about our image because it is
+               perfect. A great number of different grateful clients are the best prove of the previous statement.
+            </p>
+            <div class="row">
+              <div class="col-sm-6">
+                <span>
+                <i class="fa fa-fax fa-4x"></i>
+             <h3>Business Growth</h3>
+            </span>
+              </div>
+              <div class="col-sm-6">
+                <span>
+              <i class="fa fa-shopping-cart fa-4x"></i>
+             <h3>Marketing Campaign</h3>
+            </span>
+              </div>
+            </div>
+            <!-- end first row -->
+            <div class="row">
+              <div class="col-sm-6">
+                <span>
+              <i class="fa fa-cog fa-4x"></i>
+             <h3>Business Innovation</h3>
+            </span>
+              </div>
+              <div class="col-sm-6">
+                <span>
+              <i class="fa fa-briefcase fa-4x" ></i>
+             <h3>Strategic Planning</h3>
+            </span>
+              </div>
+            </div>
+            <!-- end second row -->
+          </div>
+          <hr>
+          <!-- end servies -->
+          <!-- start programes -->
+          <div class="programes b" id="programes">
+            <h1>OUR PROGRAMS</h1>
+            <h2>Get to know more about business</h2>
+            <div class="row">
+              <span>
+                <i class="fa fa-check fa-3x"></i>
+                <h3>Probation Program</h3>
+              </span>
+              <p>
+                If you want to get a good job, but do not have enough experience - join our probation program. Our specialists will help you find
+                 and choose a probation in big corporations and famous companies, according to your wishes and needs.
+              </p>
+            </div>
+            <!-- end first row -->
+            <div class="row">
+              <span>
+                <i class="fa fa-check fa-3x"></i>
+                <h3>Upgrade Program</h3>
+              </span>
+              <p>
+                Are you dreaming about brilliant career, but it is too hard for you to climb the career ladder? If so, company upgrade 
+                program is for you! With the help of the best lecturers and instructors you will improve necessary skills.
+              </p>
+            </div>
+            <!-- end second row -->
+            <div class="row">
+              <span>
+              <i class="fa fa-check fa-3x"></i>
+                <h3>Business Creation Program</h3>
+              </span>
+              <p>
+                Starting own business is not an easy thing, when you are not a participant of our business creation program. Successful
+                 businessmen will explain you how to develop new business step by step and create prosperous product.
+              </p>
+            </div>
+            <!-- end third row -->
+          </div>
+          <hr>
+          <!-- end programes -->
+          <!-- start gallary -->
+          <div class="gallary b" id="gallary">
+            <h1>gallary</h1>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                    <a data-fancybox="group" class="cy" href="pic1.jpg">
+                      <img src="pic1.jpg" class="card-img-top">
+                  <div class="caption">
+                      <i class="fa fa-plus-square fa-4x" ></i>
+                  </div>     
+                  </a>
+                    <div class="card-body">
+                      <h3 class="card-title">Financial Solutions</h3>
+                      <p class="card-text">We’re committed to delivering world-class financial planning.</p>
+                    </div>
+                  <!-- end card body -->
+                </div>
+                <!-- end card -->                
+              </div>
+              <!-- end first colom -->        
+                <div class="col-sm-6">
+                <div class="card">
+                  <a data-fancybox="group" class="cy" href="pic14.jpg">
+                  <img src="pic14.jpg" class="card-img-top" alt="...">
+                  <div class="caption">                    
+                    <i class="fa fa-plus-square fa-4x" ></i>                
+                </div>
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Risk Management</h3>
+                    <p class="card-text">We use a disciplined process to manage various risks.</p>
+                  </div>
+                  <!-- end card body -->
+                </div>
+                <!-- end card -->
+                </div>
+                <!-- end second colom -->
+            </div>
+            <!-- end first row -->
+            <div class="row">
+              <div class="col-sm-6">
+              <div class="card">
+                <a data-fancybox="group" class="cy" href="pic1.jpg">
+                  <img src="pic13.jpg" class="card-img-top" alt="...">
+                  <div class="caption">                    
+                    <i class="fa fa-plus-square fa-4x" ></i>                
+                </div>
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Our Objective</h3>
+                    <p class="card-text">We manage client portfolios and provide financial advice.</p>
+                  </div>
+                  <!-- end card body -->
+                </div>
+                <!-- end card -->
+              </div>
+              <!-- end first colom -->             
+                <div class="col-sm-6">
+                <div class="card">              
+                  <a data-fancybox="group" class="cy" href="pic1.jpg">
+                  <img src="pic2.jpg" class="card-img-top" alt="...">
+                  <div class="caption">                    
+                    <i class="fa fa-plus-square fa-4x" ></i>                
+                </div>
+                  </a>                 
+                  <div class="card-body">
+                    <h3 class="card-title">Premier Support</h3>
+                    <p class="card-text">Providing essential support service including 24/7.</p>
+                  </div>
+                  <!-- end card body -->
+                </div>
+                <!-- end card -->                 
+                </div>
+                <!-- end second colom -->
+            </div>
+            <!-- end second row -->
+          </div>
+          <hr>
+          <!-- end gallary -->
+          <!-- start video -->
+          <div class="video b" id="video">
+            <h1>video</h1>
+            <h2>how we work</h2>
+            <video  height="80%" width="80%" controls>
+              <source src="Mock-up.mp4" type="video/mp4">
+            </video>
+            <p>We aim to grow and enhance our services via the cooperation with you as our loyal customer
+              . The satisfaction of each new client is our precious gift that we will keep for years. </p>
+          </div>
+          <hr>
+          <!-- end video -->
+          <!-- strat prices -->
+          <div class="prices b" id="prices">
+            <h1>prices</h1>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="price">
+                  <h3><sup>$</sup>258</h3>
+                  <p>/month</p>
+                </div>
+                <!-- end price -->
+                <h2>Standard</h2>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Financial Analysis</p>
+                </span>
+                <br>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Strategic Planning</p>
+                </span>
+                <br>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Business Brokerage</p>
+                </span>
+                <br>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>CEO Consulting</p>
+                </span>
+                <br>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Market Analysis</p>
+                </span>
+                <br>
+                <button  class="btn btn-primary" >buy now</button> 
+              </div>
+              <!-- end 1 coloum -->
+              <div class="col-sm-6">
+                <div class="price">
+                  <h3><sup>$</sup>758</h3>
+                  <p>/month</p>
+                </div>
+                <!-- end price -->
+                <h2>Business</h2>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Customer Strategy</p>
+                </span>
+                <br>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Private Equity</p>
+                </span>
+                <br>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Advanced Analytics</p>
+                </span>
+                <br>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Financial Management</p>
+                </span>
+                <br>
+                <span>
+                  <i class="fa fa-check fa-2x"></i>
+                  <p>Technology Strategy</p>
+                </span>
+                <br>
+                <button  class="btn btn-primary ">buy now</button> 
+              </div>
+              <!-- end 2 coloum -->
+            </div>
+            <!-- end row -->
+          </div>
+          <hr>
+          <!-- end prices -->
+          <!-- start faqs -->
+          <div class="faqs b app2" id="faqs">
+            <h1>faqs</h1>
+            <span>
+              <i class="fa fa-3x"  :class="[show1 ? 'fa-angle-up' :'fa-angle-down']"></i> 
+              <h2 @click="show1 = !show1 ">Can I track my order?</h2>
+            </span>
+              <p  v-show="show1">
+      Yes, you can! After placing your order you will receive an order
+      confirmation via email. Each order starts production 15 minutes after your order
+  is placed. Within a few hours of you placing your order, you will receive an expected delivery
+   time. When the order will be ready for delivery, you will receive another email with the tracking 
+   number and a link to trace the order online with the courier.
+              </p>
+            <span>       
+               <i class="fa fa-3x"  :class="[show2 ? 'fa-angle-up' :'fa-angle-down']"></i>  
+              <h2 @click="show2 = !show2 ">How can I change something in my order?</h2>
+            </span>
+              <p v-show="show2">
+       If you need to change something in your order,
+      please contact us immediately. We usually process
+      orders within 30 minutes, and once we have processed
+        your order, we will be unable to make any changes.
+              </p>
+            <span>
+              <i class="fa fa-3x"  :class="[show3 ? 'fa-angle-up' :'fa-angle-down']"></i> 
+              <h2 @click="show3 = !show3 ">How can I pay for my order?</h2>
+              </span>
+              <p v-show="show3">
+      We accept Visa, MasterCard,
+       and American Express credit and debit cards for your convenience.
+              </p>
+            <span>
+              <i class="fa fa-3x"  :class="[show4 ? 'fa-angle-up' :'fa-angle-down']"></i> 
+              <h2 @click="show4 = !show4 ">Can I return an item?</h2>
+            </span>
+              <p v-show="show4">
+         Please contact our administrators for more information
+          on returning products purchased on our website
+              </p>
+          </div>
+          <hr>
+          <!-- end faqs -->
+          <!-- start testimonials -->
+          <div class="testimonials b" id="testimonials">
+            <h1>testimonials</h1>
+            <div class="row">
+              <div class="col-3">
+                <img src="pic14.jpg" height="80%" width="80%" alt="..." class="rounded-circle">
+              </div>
+              <!-- end first coloum -->
+              <div class="col-9">
+                <p>
+                  “ The guys at your company are amazing! Your service has added
+                   a great value to my life. I love that I can jump to your site any time and have access to support 24/7”. 
+                </p>
+                <h3>adam</h3>
+              </div>
+              <!-- end second coloum -->
+            </div>
+            <!-- end first row -->
+            <div class="row">
+              <div class="col-sm-3 ">
+                <img src="pic13.jpg" height="80%" width="80%" alt="..." class="rounded-circle">
+              </div>
+              <!-- end first coloum -->
+              <div class="col-sm-9">
+                <p>
+                  “ Everything has just been fantastic!
+                   Now I have increased revenue, exposure and success.
+                    I would recommend this company to anyone.” 
+                 </p>
+                <h3>kristn</h3>
+              </div>
+              <!-- end second coloum -->
+            </div>
+            <!-- end second row -->  
+          </div>
+          <hr>
+          <!-- end testimonials -->
+          <!-- start subscribes -->
+          <div class="subscribes b" id="subscribes">
+            <h1>subscribes</h1>
+            <h2>Subscribe to our newsletter to receive news, updates, and special offers by email.</h2>
+            <form >
+              <div class="form-group row ">
+                <div class="col-sm-9">
+                  <input class="form-control " type="email" id="subscribe" placeholder="email " aria-label="email">                 
+                </div>
+                <div class="col-sm-3">
+                  <button class="btn btn-outline-success  " type="submit">subscribe</button>
+                </div>
+              </div>              
+            </form>
+          </div>
+          <hr>
+          <!-- end  subscribes-->
+          <!-- start contact -->
+          <div class="contact b" id="contact">
+            <h1>contact</h1>
+            <form>
+              <div class="form-group row ">
+                <div class="col-sm-12">                
+                  <input type="text" class="form-control  "  id="inputEmail6" placeholder="Name:">                 
+                </div>             
+              </div>
+              <div class="form-group  row">                      
+                <div class="col-sm-12">                 
+                    <input type="email" class="form-control" id="inputEmail7" placeholder="Email:">                   
+                  </div>                           
+                </div>
+                <div class="form-group row ">                                                  
+                  <div class="col-sm-12">                   
+                    <textarea class="form-control" id="inputEmail8" placeholder="Message:"></textarea>                    
+                  </div>                           
+                </div>               
+              <div class="form-group row ">               
+                  <button type="submit" class="btn btn-primary pull-left">submit</button>                    
+                </div>                             
+            </form>
+            <div class="row">
+              <div class="col-sm-6">
+                <span>
+                  <i class="fa fa-location-arrow fa-2x"></i>
+                  <h2>address:</h2>
+                </span>                
+                <p>4578 Marmora Road, Glasgow
+                  D04 89GR</p>              
+              </div>
+              <!-- end 1 coloum -->
+              <div class="col-sm-6">
+                <span>
+                  <i class="fa fa-phone fa-2x" ></i>
+                  <h2>phone:</h2>
+                </span>
+                <p>
+                  800-2345-6789;<br>
+                  800-2345-6790;
+              </p>
+              </div>
+              <!-- end 2 coloum -->
+            </div>
+            <!-- end row -->
+            <i class="fa fa-facebook fa-2x" ></i>
+            <i class="fa fa-twitter fa-2x" ></i>
+            <i class="fa fa-instagram fa-2x" ></i>
+          </div>
+          <hr>
+          <!-- end contact -->
+          <!-- start footer -->
+          <div class="footer">
+            <p>SunnySide &copy; 2020. All rights reserved</p>
+          </div>
+          <!-- end footer -->
+         </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src="bootstrap.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>
